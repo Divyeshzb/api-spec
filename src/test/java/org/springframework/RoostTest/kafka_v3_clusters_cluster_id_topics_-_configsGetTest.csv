@@ -1,0 +1,11 @@
+METHOD^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY
+GET^|^https://api.example.com/v1/data^|^{authorize_token_Auth1}^|^None^|^200^|^{cluster_id:cluster-1, msg:The list of cluster configs}
+POST^|^https://api.example.com/v1/data^|^{authorize_token_Auth2}^|^{metadata:{title:Data one}}^|^200^|^{cluster_id:cluster-1, msg:The list of cluster configs}
+PUT^|^https://api.example.com/v1/data/id-123^|^{authorize_token_Auth3}^|^{metadata:{title:Data two}}^|^400^|^{error:Indicates a bad request error. It could be caused by an unexpected request body format or other forms of request validation failure}
+DELETE^|^https://api.example.com/v1/data/id-123^|^{authorize_token_Auth4}^|^None^|^401^|^{error:Indicates a client authentication error. Kafka authentication failures will contain error code 40101 in the response body}
+GET^|^https://api.example.com/v1/data/id-456^|^{authorize_token_Auth5}^|^None^|^403^|^{error:Indicates a client authorization error. Kafka authorization failures will contain error code 40301 in the response body}
+POST^|^https://api.example.com/v1/data/id-456^|^{authorize_token_Auth6}^|^{metadata:{title:Data three}}^|^429^|^{error:Indicates that a rate limit threshold has been reached, and the client should retry again later}
+PUT^|^https://api.example.com/v1/data/id-789^|^{authorize_token_Auth7}^|^{metadata:{title:Data four}}^|^500^|^{error:A server-side problem that might not be addressable from the client side. Retriable Kafka errors will contain error code 50003 in the response body}
+DELETE^|^https://api.example.com/v1/data/id-789^|^{authorize_token_Auth8}^|^None^|^200^|^{cluster_id:cluster-1, msg:The list of cluster configs}
+GET^|^https://api.example.com/v1/data/id-321^|^{authorize_token_Auth9}^|^None^|^400^|^{error:Indicates a bad request error. It could be caused by an unexpected request body format or other forms of request validation failure}
+POST^|^https://api.example.com/v1/data/id-321^|^{authorize_token_Auth10}^|^{metadata:{title:Data five}}^|^401^|^{error:Indicates a client authentication error. Kafka authentication failures will contain error code 40101 in the response body}

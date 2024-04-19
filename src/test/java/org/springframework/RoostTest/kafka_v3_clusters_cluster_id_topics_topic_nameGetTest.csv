@@ -1,0 +1,11 @@
+0^|^1
+cluster_id_1^|^topic_name_1^|^True^|^200^|^The topic
+cluster_id_2^|^topic_name_2^|^False^|^400^|^Indicates a bad request error
+cluster_id_3^|^topic_name_3^|^True^|^401^|^Indicates a client authentication error
+cluster_id_4^|^topic_name_4^|^False^|^403^|^Indicates a client authorization error
+cluster_id_5^|^topic_name_5^|^False^|^404^|^Attempted access to an unreachable resource
+cluster_id_6^|^topic_name_6^|^True^|^429^|^Rate limit threshold has been reached
+cluster_id_7^|^topic_name_7^|^True^|^500^|^A server-side problem that might not be addressable from the client side
+cluster_id_8^|^topic_name_8^|^False^|^404^|^Attempted access to an unknown topic
+cluster_id_9^|^topic_name_9^|^True^|^401^|^Kafka authentication failures will contain error code
+cluster_id_10^|^topic_name_10^|^True^|^200^|^The topic

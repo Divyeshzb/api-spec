@@ -1,0 +1,11 @@
+cluster_id^|^topic_name^|^partitions_count^|^statusCode
+rule9datacenter^|^procurement_data^|^7^|^200
+leaf3storage^|^sales_report^|^12^|^401
+main8hub^|^inventory_update^|^3^|^403
+core7cluster^|^marketing_track^|^9^|^429
+edge1node^|^finance_analysis^|^5^|^200
+hub2storage^|^hr_records^|^10^|^401
+server5exchange^|^logistics_monitoring^|^4^|^403
+data6center^|^production_status^|^8^|^429
+rule1datastorage^|^customer_profile^|^6^|^200
+core3cluster^|^revenue_prediction^|^11^|^401
