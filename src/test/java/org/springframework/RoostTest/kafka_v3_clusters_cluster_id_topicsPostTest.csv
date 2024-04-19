@@ -1,0 +1,11 @@
+cluster_id^|^topic_name^|^partitions_count^|^replication_factor^|^configs^|^validate_only^|^statusCode
+cluster1^|^topic-X^|^64^|^3^|^cleanup.policy:compact, compression.type:gzip^|^true^|^200
+cluster2^|^topic-Y^|^64^|^3^|^cleanup.policy:delete, compression.type:snappy^|^false^|^201
+cluster3^|^topic-Z^|^64^|^3^|^cleanup.policy:compact, compression.type:lz4^|^false^|^400
+cluster4^|^topic-A^|^64^|^3^|^cleanup.policy:delete, compression.type:gzip^|^true^|^401
+cluster5^|^topic-B^|^64^|^3^|^cleanup.policy:compact, compression.type:snappy^|^false^|^403
+cluster6^|^topic-C^|^64^|^3^|^cleanup.policy:delete, compression.type:lz4^|^true^|^429
+cluster7^|^topic-D^|^64^|^3^|^cleanup.policy:compact, compression.type:gzip^|^false^|^429
+cluster8^|^topic-E^|^64^|^3^|^cleanup.policy:delete, compression.type:snappy^|^true^|^5XX
+cluster9^|^topic-F^|^64^|^3^|^cleanup.policy:compact, compression.type:lz4^|^false^|^5XX
+cluster10^|^topic-G^|^64^|^3^|^cleanup.policy:delete, compression.type:gzip^|^true^|^5XX
